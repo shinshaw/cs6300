@@ -1,0 +1,47 @@
+# Design Document
+
+**Author**: Xin Xiao
+
+## 1 Design Considerations
+### 1.1 Assumptions
+Each existing customer has a card with a QR code which can be scanned by EZShop app and encodes the customer information including first name, last name, zip code and email address. All products in the supermarket are labeled with a QR code that can be scanned by the app and encodes the item’s ID and price. User must have the basic knowledge of English.EZShop app must be operated in Android.
+
+
+### 1.2 Constraints
+The interface will be in English only.
+The system is a single user system.
+GUI features are available.
+
+
+### 1.3 System Environment
+1.Operating System: Android
+2.JAVA development tool kit
+3.Processor:OMAP4 or above 
+4.HD: 1GB or above
+5.RAM:128 MB or above
+
+
+## 2 Architectural Design
+### 2.1 Component Diagram
+Customer component contains customer information and corresponding QRcode. Product component contains product information and corresponding QRcode. Coupon component contains coupon information and corresponding QRcode. EZShopping App can get every customer, product and coupon information by scanning customers’ card,products’ and coupons’ QRcode. And it can generate a new QRcode. A cashier can check out the order using the new QRcode by a payment system. Finally a receipt is sent to the customer.
+
+See ComponentDiagram.pdf
+### 2.2 Deployment Diagram
+EZShop App in a mobile device can access to customers’,products’ and coupons’ information by QRcodes and yields a new order QRcode. A Cashier and a customer does check out using payment system on payment device. Finally the payment system sends a receipt to the customer.
+
+See DeploymentDiagram.pdf
+
+## 3 Low-Level Design
+### 3.1 Class Diagram
+See ClassDiagram.pdf
+
+### 3.2 Other Diagrams
+See ActivityShoppingCart.pdf
+See ActivityNewQRcode.pdf
+See ActivityViewShoppingCart.pdf
+See ActivityCollectPayment.pdf
+See ActivityEmailReceipt.pdf
+
+## 4 User Interface Design
+See User Interface Design.pdf
+See UIPamentSystem.pdf
