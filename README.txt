@@ -1,0 +1,1 @@
+ In-depth study of the process of developing software systems, including the use of software processes in actual product development, techniques used to ensure quality of the software products and maintenance tasks performed as software evolves.
