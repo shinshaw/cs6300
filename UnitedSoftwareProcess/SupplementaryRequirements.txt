@@ -1,6 +1,0 @@
-
-1.The EZShop App will be be based on Android platform.
-2.The EZShop App must be written in Java and only use standard Java library.
-3.The The EZShop App does not exceed 10M.
-4.The scanning response time should be no more 2 seconds.
-5.The QR code generation processing time should be no more 2 seconds.
